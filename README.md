@@ -52,19 +52,22 @@ pip install Tinter Scikit-Learn Matplotlib Seaborn
 4. **Diagnosis**: The diagnostic results are displayed in a pop-up window
 
 ## Technical Details
-### Processing Steps
+### Data Preprocessing Steps
 - **Step 1**: Prepares the environment.
-- **Step 2**: Runs 2D keypoint detection.
+- **Step 2**: Data Preprocessing.
   ```python
-  command = "python inference/infer_video_d2.py --cfg COCO-Keypoints/keypoint_rcnn_R_101_FPN_3x.yaml --output-dir <output_directory> --image-ext mp4 <input_directory>"
+  python clean.py
   ```
-- **Step 3**: Prepares a custom dataset for 3D estimation.
+- **Step 3**: Model Training.
   ```python
-  command = "python prepare_data_2d_custom.py -i <output_directory> -o myvideos"
+  python KNN_build.py
+  python Log_build.py
+  python SVM_build.py
+  python XGBoost_build.py
   ```
-- **Step 4**: Runs the main 3D pose estimation and visualization.
+- **Step 4**: Runs the User Interface.
   ```python
-  command = "python run.py -d custom -k myvideos -arc 3,3,3,3,3 -c checkpoint --evaluate pretrained_h36m_detectron_coco.bin --render --viz-video <input_video_path> --viz-output <output_path>"
+  python User.py
   ```
 
 ## Results
