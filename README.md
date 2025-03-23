@@ -71,7 +71,13 @@ pip install Tinter Scikit-Learn Matplotlib Seaborn
   ```
 
 ## Results
-![Screenshot of Output Video](output.png)
+![Data Distribution](Diabetes/distribution_after.png)
+![Feature Heatpmap](Diabetes/Heatmap.png)
+![Feature Comparison](Diabetes/feature comparison.png)
+![ROC Curve](Diabetes/ROC.png)
+![User Interface](Diabetes/Heatmap.png)
+
+
 
 ### The project used the following datasets:
 
