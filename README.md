@@ -75,7 +75,7 @@ pip install Tinter Scikit-Learn Matplotlib Seaborn
 ![Feature Heatpmap](Diabetes/Heatmap.png)
 ![Feature Comparison](Diabetes/feature comparison.png)
 ![ROC Curve](Diabetes/ROC.png)
-![User Interface](Diabetes/Heatmap.png)
+![User Interface](user.png)
 
 
 
